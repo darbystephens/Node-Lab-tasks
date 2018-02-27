@@ -1,0 +1,8 @@
+<!-- <div> -->
+  <input type="text" ng-model="taskOnList" placeholder="Filter your to-do's">
+  <ol>
+    <li ng-repeat="todo in $ctrl.todoList | filter: taskOnList track by $index"> {{todo.task}}
+      <i class="material-icons" ng-click="$ctrl.remove($index)">close</i>
+    </li>
+  </ol>
+<!-- </div> -->
